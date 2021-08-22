@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+
+include_directories(..)
+
+add_executable(tag_of_test tag_of.cpp)
+add_executable(is_scalar_test is_scalar.cpp)
+add_executable(dim_of_test dim_of.cpp)
+add_executable(std_array_test std_array.cpp)
+add_test(NAME std_array_test COMMAND std_array_test)
+add_executable(transform_test transform.cpp)
+add_test(NAME transform_test COMMAND transform_test)
+add_executable(reduce_test reduce.cpp)
+add_test(NAME reduce_test COMMAND reduce_test)
+add_executable(add_test add.cpp)
+add_test(NAME add_test COMMAND add_test)
+add_executable(length_test length.cpp)
+add_test(NAME length_test COMMAND length_test)
