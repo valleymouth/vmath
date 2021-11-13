@@ -12,19 +12,6 @@ namespace vmath
   {
     template <typename T>
     struct elem_impl;
-
-    template <>
-    struct elem_impl<traits::scalar_tag>
-    {
-      template <typename T, std::size_t>
-      struct apply
-      {
-        static decltype(auto) call(T&& x)
-        {
-          return std::forward<T>(x);
-        }
-      };
-    };
   } // namespace detail
 
   template <std::size_t I, typename T>
